@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"git.sxxfuture.net/filfi/letsfil/fil-data/intern"
-	"git.sxxfuture.net/filfi/letsfil/fil-data/intern/models"
+	"github.com/jhyehuang/fil-cmd/intern"
+	"github.com/jhyehuang/fil-cmd/intern/models"
 	"github.com/urfave/cli/v2"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

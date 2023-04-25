@@ -1,10 +1,10 @@
 package intern
 
 import (
-	"git.sxxfuture.net/filfi/letsfil/fil-data/intern/models/model"
-	"git.sxxfuture.net/filfi/letsfil/fil-data/pkg/log"
 	"github.com/filecoin-project/go-state-types/big"
 	"github.com/filecoin-project/go-state-types/builtin"
+	"github.com/jhyehuang/fil-cmd/intern/models/model"
+	"github.com/jhyehuang/fil-cmd/pkg/log"
 	"github.com/labstack/echo/v4"
 	"net/http"
 )

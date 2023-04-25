@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"git.sxxfuture.net/filfi/letsfil/fil-data/pkg/log"
+	"github.com/jhyehuang/fil-cmd/pkg/log"
 	"github.com/joho/godotenv"
 	"os"
 	"path"

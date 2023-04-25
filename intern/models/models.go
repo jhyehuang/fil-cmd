@@ -1,7 +1,7 @@
 package models
 
 import (
-	"git.sxxfuture.net/filfi/letsfil/fil-data/intern/models/model"
+	"github.com/jhyehuang/fil-cmd/intern/models/model"
 	"gorm.io/gorm"
 )
 

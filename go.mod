@@ -3,7 +3,6 @@ module github.com/jhyehuang/fil-cmd
 go 1.19
 
 require (
-	git.sxxfuture.net/filfi/letsfil/fil-data v0.0.0-20230326011525-2d2ac8fda5fb
 	github.com/filecoin-project/go-address v1.1.0
 	github.com/filecoin-project/go-fil-markets v1.27.0-rc1
 	github.com/filecoin-project/go-jsonrpc v0.2.3
@@ -186,4 +185,4 @@ require (
 	lukechampine.com/blake3 v1.1.7 // indirect
 )
 
-//replace git.sxxfuture.net/filfi/letsfil/fil-data => git.sxxfuture.net/filfi/letsfil/fil-data
+//replace github.com/jhyehuang/fil-cmd => github.com/jhyehuang/fil-cmd
