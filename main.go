@@ -17,7 +17,7 @@ package main
 
 import (
 	"fmt"
-	"git.sxxfuture.net/filfi/letsfil/fil-data/cmd"
+	"github.com/jhyehuang/fil-cmd/cmd"
 	"github.com/urfave/cli/v2"
 	"os"
 )
@@ -37,6 +37,7 @@ func main() {
 	app.EnableBashCompletion = true
 	app.Writer = os.Stderr
 	app.Commands = []*cli.Command{
+		&cmd.ChainDisputeSetCmd,
 		&cmd.RunCommand,
 	}
 
