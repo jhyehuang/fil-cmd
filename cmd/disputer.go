@@ -115,7 +115,7 @@ var disputerStartCmd = &cli.Command{
 
 		knownMiners := make(map[address.Address]struct{})
 		deadlineMap := make(map[abi.ChainEpoch][]minerDeadline)
-		for _, miner := range minerList {
+		for i, miner := range minerList {
 			dClose, dl, err := makeMinerDeadline(ctx, Lv1api, miner)
 			if err != nil {
 				loggo.Error(err)
@@ -125,6 +125,7 @@ var disputerStartCmd = &cli.Command{
 			deadlineMap[dClose+Confidence] = append(deadlineMap[dClose+Confidence], *dl)
 
 			knownMiners[miner] = struct{}{}
+			log.Infof("miner: %d, %s", i, miner.String())
 		}
 
 		// when this fires, check for newly created miners, and purge any "missed" epochs from deadlineMap
